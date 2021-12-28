@@ -9,10 +9,10 @@
 	'depends' : ['base'],
 	'data' : [
 		# 'security/groups.xml',
-		# 'security/ir.model.access.csv',
+		'security/ir.model.access.csv',
 		'views/views.xml',
 		'views/exp_menus.xml',
-		# 'views/library_book.xml'
+		'views/expense_views.xml'
 	],
 
 }

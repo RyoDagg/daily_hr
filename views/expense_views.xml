@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <!--Form view-->
-    <record id="hr_expense_view_form" model="ir.ui.view">
+    <!-- <record id="hr_expense_view_form" model="ir.ui.view">
         <field name="name">Library Book Form</field>
         <field name="model">library.book</field>
         <field name="arch" type="xml">
@@ -31,27 +31,24 @@
                 </group>
             </form>
         </field>
-    </record>
+    </record> -->
     <!--Tree view-->
-    <record id="library_book_view_tree" model="ir.ui.view">
-        <field name="name">Library Book List</field>
-        <field name="model">library.book</field>
+    <record id="expense_view_tree" model="ir.ui.view">
+        <field name="name">Expenses List</field>
+        <field name="model">hr.expense</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="short_name"/>
-                <field name="name" string="Book Title"/>
-                <field name="date_release"/>
-                <field name="author_ids" string="Author(s)" widget="many2many_tags"/>
-                <field name="category_id"/>
-                <field name="cost_price"/>
-                <field name="retail_price" string="Selling Price" widget="Monetary"/>
-                <field name="currency_id"/>
-                <field name="publisher_id"/>
+                <field name="ref"/>
+                <field name="product"/>
+                <field name="employee"/>
+                <field name="total"/>
+                <field name="date"/>
+
             </tree>
         </field>
     </record>
     <!-- Search view -->
-    <record id="*library_book_view_search" model="ir.ui.view">
+    <!-- <record id="*library_book_view_search" model="ir.ui.view">
         <field name="name">Library Book Search</field>
         <field name="model">library.book</field>
         <field name="arch" type="xml">
@@ -61,5 +58,5 @@
                 <filter name="without_author" string="No Author" domain="[('author_ids', '=', False), ]"/>
             </search>
         </field>
-    </record>
+    </record> -->
 </odoo>

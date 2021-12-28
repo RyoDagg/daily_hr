@@ -10,6 +10,7 @@ class HRExpense(models.Model):
         # ('name_uniq', 'UNIQUE (name)','Book title must be unique.'),
         # ('positve_page', 'CHECK (pages>0)','Number of pages must be positive.')]
 
+    ref = fields.Char(string="Reference")
     description = fields.Char('Description')
     product = fields.Char(string="Product")
 
