@@ -15,7 +15,7 @@ class HRExpense(models.Model):
 
     unit_price = fields.Float("Unit Price")
 
-    quantity = fields.Binary(string="Quantity")
+    quantity = fields.Integer(string="Quantity")
 
     total = fields.Float('Total Price',
         compute = '_calc_total',

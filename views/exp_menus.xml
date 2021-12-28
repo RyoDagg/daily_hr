@@ -1,13 +1,5 @@
 <?xml version="1.0"?>
 <odoo>
-    <menuitem id="HRExpence_base_menu" name="4df54hgf"/>
+    <menuitem id="HRExpence_base_menu" name="HR Expences"/>
     <menuitem id="HRExpence_book_menu" parent="HRExpence_base_menu" name="Expences List" action="hr_expense_action"/>
 </odoo>
-
-<!-- <odoo>
-    <menuitem id="library_base_menu" name="My Library">
-        <menuitem id="library_lvl1_menu_1" name="Books">
-            <menuitem id="books_menu" name="Booklist" action="library_book_action"/>
-        </menuitem>
-    </menuitem>
-</odoo> -->

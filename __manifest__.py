@@ -5,7 +5,7 @@
 	'application' : True,
 	'author' : 'Make It Happen',
 	'website' : 'https://mih.tn/',
-	'version' : '13.0.1',
+	'version' : '1.0',
 	'depends' : ['base'],
 	'data' : [
 		# 'security/groups.xml',
